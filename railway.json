@@ -1,0 +1,20 @@
+{
+  "build": {
+    "env": {
+      "SONARQUBE_JDBC_USERNAME": "sonar",
+      "SONARQUBE_JDBC_PASSWORD": "sonar",
+      "SONARQUBE_JDBC_URL": "jdbc:postgresql://localhost:5432/sonarqube"
+    }
+  },
+  "deploy": {
+    "startCommand": "./bin/run.sh",
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 10
+  },
+  "services": {
+    "web": {
+      "port": 9000,
+      "protocol": "HTTP"
+    }
+  }
+}
