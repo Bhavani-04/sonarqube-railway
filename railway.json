@@ -7,7 +7,7 @@
     }
   },
   "deploy": {
-    "startCommand": "./bin/run.sh",
+    "startCommand": "bin/docker/sonar.sh",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
   },
@@ -18,3 +18,4 @@
     }
   }
 }
+
